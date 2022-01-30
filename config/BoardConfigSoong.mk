@@ -32,6 +32,7 @@ SOONG_CONFIG_bootleggersGlobalVars += \
     ignores_ftp_pptp_conntrack_failure \
     needs_camera_boottime \
     needs_netd_direct_connect_rule \
+    camera_needs_client_info_lib \
     target_init_vendor_lib \
     target_inputdispatcher_skip_event_key \
     target_ld_shim_libs \
@@ -61,6 +62,7 @@ SOONG_CONFIG_bootleggersQcomVars += \
 endif
 
 # Soong bool variables
+SOONG_CONFIG_bootleggersGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 SOONG_CONFIG_bootleggersGlobalVars_disable_postrender_cleanup := $(TARGET_DISABLE_POSTRENDER_CLEANUP)
 SOONG_CONFIG_bootleggersGlobalVars_has_legacy_camera_hal1 := $(TARGET_HAS_LEGACY_CAMERA_HAL1)
 SOONG_CONFIG_bootleggersGlobalVars_has_memfd_backport := $(TARGET_HAS_MEMFD_BACKPORT)
