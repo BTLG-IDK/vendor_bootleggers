@@ -14,3 +14,7 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.bootleggers.songcodeurl=$(BOOTLEGGERS_SONGCODEURL) \
     ro.bootleggers.display.version=$(BOOTLEGGERS_VERSION) \
     ro.bootleggers.build.date=$(BOOTLEGGERS_EPOCH)
+
+# Bootleggers Android 12.1 Specific Props
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.bootleggers.settings.android_version=12.1
