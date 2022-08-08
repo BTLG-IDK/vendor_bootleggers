@@ -24,14 +24,11 @@ ifeq ($(BOOTLEGGERS_BUILD_APPS_BUNDLE),true)
             Camera2 \
             Email \
             Etar \
-            Jelly \
             NotallyPrebuilt \
             PrebuiltAuxio \
             QPGallery
-
 else
     PRODUCT_PACKAGES += \
-        Jelly \
         Camera2
 endif
 
