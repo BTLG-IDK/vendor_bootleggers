@@ -33,9 +33,8 @@ else
 endif
 
 # Inlcude Google Apps
-ifeq ($(WITH_GAPPS),true)
-    $(call inherit-product, vendor/gapps/basic/config.mk)
-endif
+ifeq ($(WITH_GMS),true)
+    $(call inherit-product, vendor/gms/products/gms.mk)
 
 # Inlcude MicroG
 ifeq ($(WITH_MICROG),true)
