@@ -32,8 +32,8 @@ else
 endif
 
 # Inlcude Google Apps
-ifeq ($(WITH_GAPPS),true)
-    $(call inherit-product, vendor/google/gms/config.mk)
+ifeq ($(WITH_GMS),true)
+    $(call inherit-product, vendor/gms/products/gms.mk)
 endif
 
 ifeq ($(BOOTLEGGERS_BUILD_TYPE),Shishufied)
